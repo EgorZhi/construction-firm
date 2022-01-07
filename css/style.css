@@ -209,6 +209,25 @@ img {
 	text-transform: uppercase;
 	color: var(--gray);
 }
+@media (max-width: 790px) {
+	.years-container {
+		min-height: 300px;
+		background-color: var(--white);
+		margin: -200px 0 0 0;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.years-item {
+		width: 190px;
+		min-height: 186px;
+		flex: 0 1 50%;	
+	}
+	.years-item-header {
+		margin: 0 0 0 0;
+	}
+}
 
 /* --------БЛОК НАШИ КРУПНЕЙШИЕ ПРОЕКТЫ-------- */
 .projects-body {
@@ -222,7 +241,6 @@ img {
 	margin: 46px 0 0 0;
 }
 .projects-item-img {
-	min-height: 380px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -262,7 +280,27 @@ img {
 	line-height: calc(22 / 16 * 100%);
 	color: var(--gray);
 }
-
+@media (max-width: 776px) {
+	.projects-body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+	}
+	.projects-item {
+		flex: 0 1 100%;
+	}
+	.projects-item-img {
+		margin: 0 auto;
+		display: block;
+	}
+	.projects-item-line {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.projects-item-title {
+		text-align: center;
+	}
+}
 /* --------БЛОК САМЫЕ УМНЫЕ ПРОЕКТЫ-------- */
 .smart-projects {
 	margin: 105px 0 0 0;
@@ -347,7 +385,57 @@ img {
 	align-items: center;
 	font-size: 1.5em;
 }
-
+@media (max-width:800px) {
+	.smart-projects {
+		margin: 50px 0 0 0;
+		background-color: var(--accent);
+	}
+	.smart-projects-body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: auto;
+	}
+	.smart-projects-descr {
+		flex: 0 1 100%;
+	}
+	.smart-projects-title {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 42px;
+		line-height: calc(71 / 42 * 100%);
+	}
+	.smart-projects-sub-title {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 21px;
+		line-height: calc(36 / 21 * 100%);
+	}
+	.button {
+		margin: 0px 0 0 0;
+	}
+}
+@media (max-width:536px) {
+	.smart-projects-title {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 28px;
+		line-height: calc(54 / 32 * 100%);
+	}
+	.smart-projects-sub-title {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 16px;
+		line-height: calc(36 / 20 * 100%);
+	}
+	.button {
+		margin: -20px 0 0 0;
+	}
+}
 /* --------БЛОК ЧЕМ МЫ ЗАНИМАЕМСЯ-------- */
 .activities-container {
 	margin: 0 auto;
@@ -364,8 +452,6 @@ img {
 }
 .activities-body {
 	margin: 54px 0 0 0;
-}
-.activities-body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -401,7 +487,25 @@ img {
 	color: var(--black);
 	margin: 0px 0px 0 0;
 }
-
+@media (max-width: 776px) {
+	.activities-container {
+		margin: 0 auto;
+		margin: 70px 0 0 0;
+	}
+	.activities-title {
+		margin: 0;
+	}
+	.activities-body {
+		margin: 0 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+}
 /* --------ФОТОГРАФИИ НАШИХ ПРОЕКТОВ-------- */
 .projects-container {
 	margin: 150px 0 0 0;
@@ -418,6 +522,13 @@ img {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: auto;
+}
+@media (max-width: 800px) {
+	.projects-container {
+		margin: 50px 0 0 0;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-rows: repeat(2, 1fr);
+	}
 }
 
 /* --------ОТВЕТЫ НА ВОПРОСЫ-------- */
@@ -494,6 +605,11 @@ li.QA-item.dropdown::before {
 	top: 28px;
 	left: 3px;
 }
+@media (max-width: 776px) {
+	.QA {
+		margin: 80px 0 0 0;
+	}
+}
 /* --------НАШИ ПАРТНЕРЫ-------- */
 .partners {
 	background-color: var(--dark);
@@ -521,6 +637,34 @@ li.QA-item.dropdown::before {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 50px 0 0 0;
+}
+@media (max-width: 900px) {
+	.partners {
+		background-color: var(--dark);
+		min-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0 10px 0;
+		margin-top: 50px;
+	}
+	.partners-body {
+		margin: 0 0 0 0;
+	}
+	.partners-title {
+		padding: 0;
+		margin: 0;
+	}
+	.partners-count {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin: 0 0 0 0;
+	}
+	.partners-item {
+		flex: 1 1 calc((100% / 3) - 2rem);
+		text-align: center;
+	}
 }
 /* --------ОТЗЫВЫ-------- */
 .reviews-container {
@@ -585,6 +729,32 @@ li.QA-item.dropdown::before {
 	letter-spacing: -0.01em;	
 	color:var(--accent);
 }
+@media (max-width: 1000px) {
+	.reviews-container {
+		margin: 0 auto;
+		padding: 80px 0 0 0;
+	}
+	.reviews-article-body {
+		padding: 30px 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.reviews-article-item {
+		flex: 0 1 100%;
+		max-width: 100%;
+	}
+	.blockquote {
+		padding: 80px 30px 10px 30px;
+	}
+	.blockquote:before {
+		top: 33px;
+		left: 30px;
+	}
+	.article-author {
+		margin: 0;
+		padding: 0 0 0 30px;
+	}
+}
 
 /* --------СОТРУДНИЧЕСТВО-------- */
 .partnership {
@@ -615,10 +785,10 @@ li.QA-item.dropdown::before {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
 .contacts-item {
 	padding: 0 15px;
+	min-width: 205px;
 	flex: 0 1 25%;
 }
 .contacts-item-img {
@@ -647,7 +817,29 @@ li.QA-item.dropdown::before {
 .contacts-item-sub-title._accent {
 	color: var(--accent);
 }
-
+@media (max-width: 850px) {
+	.contacts-container {
+		padding: 80px 0 130px 0;
+	}
+	.contacts-body {
+		padding-top: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.contacts-item {
+		padding: 0 15px;
+		margin: 30px 0 0 0;
+		min-width: 285px;
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 600px) {
+	.contacts-item {
+		flex: 0 1 100%;
+	}
+}
 /* --------ПОДВАЛ САЙТА-------- */
 .footer {
 	background-color: var(--dark);
@@ -668,9 +860,29 @@ li.QA-item.dropdown::before {
 	line-height: calc(22 / 16 * 100%);
 	color: var(--white);
 }
-
+@media (max-width: 576px) {
+	.footer-body {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	.footer-copyright,
+	.footer-studio {
+		display: block;
+		padding: 0;
+		margin: 0;
+		flex: 0 1 100%;
+		text-align: center;
+	}
+}
 
 /* --------МЕДИА-ЗАПРОСЫ-------- */
+@media (max-width: 992px) {
+
+}
 @media (max-width: 768px) {
 	.hero-title {
         font-size: 48px;        
@@ -680,4 +892,7 @@ li.QA-item.dropdown::before {
 	.hero-title {
         font-size: 34px;        
 	}
+}
+@media (max-width: 320px) {
+	
 }
