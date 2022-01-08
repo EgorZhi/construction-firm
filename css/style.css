@@ -666,6 +666,11 @@ li.QA-item.dropdown::before {
 		text-align: center;
 	}
 }
+@media (max-width: 590px) {
+	.partners-item {
+		flex: 0 1 100%;
+	}
+}
 /* --------ОТЗЫВЫ-------- */
 .reviews-container {
 	margin: 0 auto;
